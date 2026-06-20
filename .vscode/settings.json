@@ -1,0 +1,18 @@
+{
+  // Point VSCode / Pylance at the project venv so imports resolve (no red squiggles).
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  // During live interview coding we only care about *missing imports*, not strict
+  // type-annotation nitpicks. Keep type checking off to avoid noisy red while typing;
+  // unresolved imports are still reported so a genuinely-missing package shows up.
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.indexing": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+
+  // pytest, ready to go.
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["."]
+}

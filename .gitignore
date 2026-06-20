@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Env / venv
+.venv/
+.env
+
+# DeepEval / caches
+.deepeval/
+.deepeval-cache.json
+
+# Vector stores / local data dumps
+chroma/
+*.sqlite3
+
+# OS / editor
+.DS_Store
